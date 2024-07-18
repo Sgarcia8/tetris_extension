@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "tetris extension",
+    "version": "1.0",
+    "description": "Esta extensión se basa en el juego de tetris solo que de una forma mas comoda para poder jugarlo en cualquier momento y desde cualquier sitio web",
+    "icons": {
+        "128": "icons/main_img.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup":"popup/popup.html",
+        "default_incon":"icons/main_img.png"
+    },
+    "content_security_policy": {
+      "extension_pages": "script-src 'self' 'wasm-unsafe-eval'"
+    }
+}
